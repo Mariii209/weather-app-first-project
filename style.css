@@ -1,0 +1,37 @@
+.container {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  padding: 25px 20px;
+  margin-top: 70px;
+  background: white;
+}
+
+.search-bar {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #f4f1fe;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.search-button {
+  width: 17%;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #1ecdff;
+  color: white;
+}
+
+body {
+  background: #f4f1fe;
+}
