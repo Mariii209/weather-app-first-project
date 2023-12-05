@@ -1,3 +1,7 @@
+body {
+  background: #f4f1fe;
+}
+
 .container {
   border: none;
   border-radius: 10px;
@@ -8,6 +12,11 @@
   padding: 25px 20px;
   margin-top: 70px;
   background: white;
+}
+
+header {
+  padding-bottom: 45px;
+  border-bottom: 1px solid #f4f1fe;
 }
 
 .search-bar {
@@ -32,6 +41,35 @@
   color: white;
 }
 
-body {
-  background: #f4f1fe;
+.weather-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weather-info {
+}
+
+.weather-details {
+  position: sticky;
+  left: 100%;
+  font-size: 30px;
+}
+
+.weather-description {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.city-name {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.weather-icon {
+  font-size: 40px;
+}
+
+.degree-f-c {
+  padding-bottom: 15px;
 }
