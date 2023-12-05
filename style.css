@@ -6,7 +6,7 @@ body {
   border: none;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 600px;
+  width: 500px;
   display: block;
   margin: 0 auto;
   padding: 25px 20px;
@@ -45,6 +45,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-bottom: 35px;
 }
 
 .weather-info {
@@ -72,4 +73,12 @@ header {
 
 .degree-f-c {
   padding-bottom: 15px;
+}
+
+.footer {
+  padding-top: 20px;
+  text-align: center;
+
+  font-size: 12px;
+  border-top: 1px solid #f4f1fe;
 }
