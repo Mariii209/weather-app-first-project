@@ -6,7 +6,7 @@ body {
   border: none;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 500px;
+  width: 400px;
   display: block;
   margin: 0 auto;
   padding: 25px 20px;
@@ -31,7 +31,7 @@ header {
 }
 
 .search-button {
-  width: 17%;
+  width: 16%;
   height: 40px;
   margin-left: 10px;
   border-radius: 10px;
@@ -59,26 +59,43 @@ header {
 
 .weather-description {
   font-size: 12px;
+  font-weight: 400;
   margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+  color: gray;
 }
 
 .city-name {
   font-size: 40px;
+  font-weight: 700;
   margin-bottom: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .weather-icon {
   font-size: 40px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
 }
 
 .degree-f-c {
   padding-bottom: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
 }
 
 .footer {
   padding-top: 20px;
   text-align: center;
-
+  color: gray;
   font-size: 12px;
   border-top: 1px solid #f4f1fe;
+}
+
+a {
+  text-decoration: none;
+}
+
+.humidty-wind {
+  color: red;
 }
