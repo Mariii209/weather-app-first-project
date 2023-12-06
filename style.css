@@ -49,9 +49,6 @@ header {
   padding-bottom: 35px;
 }
 
-.weather-info {
-}
-
 .weather-details {
   position: sticky;
   left: 100%;
@@ -116,7 +113,8 @@ a {
   }
 
   .weather-info {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
   }
 
   .weather-details {
