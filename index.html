@@ -15,13 +15,14 @@
   <body>
     <div class="container">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Search city..."
             required
             minlength="1"
             class="search-bar"
+            id="search-bar"
           />
           <button class="search-button">Search</button>
         </form>
@@ -31,7 +32,7 @@
           <div class="weather-icon">🌧️ 64</div>
           <span class="degree-f-c">°F</span>
           <div class="weather-details">
-            <h1 class="city-name">Modesto</h1>
+            <h1 class="city-name" id="city-name">Modesto</h1>
             <p class="weather-description">
               Monday 10:38, light rain <br />
               Humidty: <span class="humidty-wind">87%</span>, Wind:
@@ -56,5 +57,6 @@
         >
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
