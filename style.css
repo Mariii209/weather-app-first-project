@@ -71,15 +71,22 @@ header {
 }
 
 .weather-icon {
-  font-size: 40px;
+  font-size: 52px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
+}
+
+#temp-number {
+  position: relative;
+  bottom: 18px;
 }
 
 .degree-f-c {
   padding-bottom: 15px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
+  position: relative;
+  bottom: 11px;
 }
 
 .footer {
@@ -92,6 +99,11 @@ header {
 
 a {
   text-decoration: none;
+}
+
+.weather-img {
+  width: 70px;
+  height: 70px;
 }
 
 .humidty-wind {
