@@ -60,7 +60,7 @@ header {
   font-weight: 400;
   margin-top: 0;
   font-family: "Open Sans", sans-serif;
-  color: gray;
+  color: #a8a6b4;
 }
 
 .city-name {
@@ -107,6 +107,39 @@ a {
 }
 
 .humidty-wind {
+  color: red;
+  font-weight: 600;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.forecast-container {
+  text-align: center;
+}
+
+.forecast-days {
+  font-size: 17px;
+  font-weight: 600;
+  color: #a8a6b4;
+}
+
+.icon-imagine {
+  font-size: 50px;
+}
+
+.forecast-temperature {
+  font-size: 13px;
+  color: red;
+}
+
+.max-tem-forecast {
+  font-weight: 600;
   color: red;
 }
 

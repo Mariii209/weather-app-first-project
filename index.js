@@ -56,3 +56,24 @@ function currentTimeInfo(date) {
 }
 
 searchCity("Modesto");
+
+function displayForecast() {
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thur"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml += `<div class="forecast-container">
+                    <div class="forecast-days">${day}</div>
+                    <div class="icon-imagine">🌤️</div>
+                    <div class="forecast-temperature">
+                      <span class="max-tem-forecast">10°</span>
+                      <span class="mini-forecast"> 1°</span>
+                    </div>
+                  </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
