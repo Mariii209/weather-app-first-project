@@ -57,23 +57,43 @@ function currentTimeInfo(date) {
 
 searchCity("Modesto");
 
-function displayForecast() {
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thur"];
+function weekdays(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+  return days[date.getDay()];
+}
+
+function forecastSearch(city) {
+  let apiKey = "7f30420fc505ct92a4f1o960ab77843b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let forecastHtml = "";
 
-  days.forEach(function (day) {
-    forecastHtml += `<div class="forecast-container">
-                    <div class="forecast-days">${day}</div>
-                    <div class="icon-imagine">🌤️</div>
-                    <div class="forecast-temperature">
-                      <span class="max-tem-forecast">10°</span>
-                      <span class="mini-forecast"> 1°</span>
-                    </div>
-                  </div>`;
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastHtml += `<div class="forecast-container">
+                        <div class="forecast-days">${weekdays(day.time)}</div>
+                        <img src="${
+                          day.condition.icon_url
+                        }" class="icon-imagine" />
+                        <div class="forecast-temperature">
+                          <span class="max-tem-forecast">${Math.round(
+                            day.temperature.maximum
+                          )}°</span>
+                          <span class="mini-forecast">${Math.round(
+                            day.temperature.minimum
+                          )}°</span>
+                        </div>
+                      </div>`;
+    }
   });
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
+forecastSearch("Modesto");
