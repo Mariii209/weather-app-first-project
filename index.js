@@ -2,6 +2,7 @@ function searching(event) {
   event.preventDefault();
   let searchingBar = document.querySelector("#search-bar");
   searchCity(searchingBar.value);
+  forecastSearch(searchingBar.value);
 }
 
 let searchFormElement = document.querySelector("#search-form");
